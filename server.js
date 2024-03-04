@@ -47,13 +47,12 @@ const updateBurger = async (req, res) => {
         { new: true }
       );
       if (updatedBurger) {
-        res.json({ message: "Ingredients updated successfully!" });
+        console.log("Ingredients updated successfully!");
       } else {
-        res.status(404).json({ message: " not found." });
+        console.log("not found.");
       }
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: "Internal server error." });
+    } catch (e) {
+      console.log(e);
     }
   };
 
