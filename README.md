@@ -11,6 +11,7 @@ node server
 
 1.Create item
 POST localhost:3600/food
+
 Request Body:
 json
 **{
@@ -26,6 +27,7 @@ GET localhost:3600/getdata
 
 3.Update item
 PUT localhost:3600/update
+
 json
 **{
     "ingrediants":"Bread, Cheese"
